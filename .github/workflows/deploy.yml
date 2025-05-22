@@ -30,7 +30,7 @@ jobs:
           aws-region: us-east-2
 
       - name: Create deployment package
-        run: zip -r function.zip node_modules index.js
+        run: zip -r function.zip node_modules index.mjs
 
       - name: Update Lambda function
-        run: aws lambda update-function-code --function-name your-lambda-function-name --zip-file fileb://function.zip
+        run: aws lambda update-function-code --function-name myLambdaFunction --zip-file fileb://function.zip
