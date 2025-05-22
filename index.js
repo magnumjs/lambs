@@ -5,9 +5,10 @@ export const handler = async (event, context) => {
   let area = calculateArea(length, width);
   console.log(`The area is ${area}`);
         
-  console.log('CloudWatch log group: ', context.logGroupName);
+  console.log('CloudWatch log group name: ', context.logGroupName);
   
   let data = {
+    "time": "",
     "area": area,
   };
     return JSON.stringify(data);
