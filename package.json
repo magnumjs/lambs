@@ -1,0 +1,16 @@
+{
+  "name": "lambs",
+  "version": "1.0.0",
+  "description": "A simple lambda using Moment.js",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
