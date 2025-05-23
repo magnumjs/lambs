@@ -27,7 +27,7 @@ jobs:
         with:
           aws-region: us-east-2
           role-to-assume: arn:aws:iam::475057824660:role/AdministratorAccess
-          run: aws sts get-caller-identity  # Example: Verify credentials
+      - run: aws sts get-caller-identity  # Example: Verify credentials
 #        uses: aws-actions/configure-aws-credentials@v3
  #       with:
 #          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
